@@ -1,0 +1,46 @@
+###
+GET http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/books/3 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{
+"author": "Kesinee Boonchuay",
+"bookid": 60,
+"category": "Data Mining",
+"isbn": "1234567890",
+"pageCount": 999,
+"price": 950,
+"publishedDate": "2022-08-08",
+"shortDescription": "Data Mining Book .... ",
+"thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/small.jpg",
+"title": "Data Mining Programming with Python"
+}
+
+
+###
+PUT http://localhost:3000/books/3 HTTP/1.1
+Content-Type: application/json
+
+{
+"author": "Kesinee Boonchuay",
+"bookid": 3,
+"category": "Data Mining",
+"isbn": "9999999999",
+"pageCount": 999,
+"price": 950,
+"publishedDate": "2022-08-08",
+"shortDescription": "Data Mining Book .... ",
+"thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/small.jpg",
+"title": "Data Mining Programming with Python"
+}
+
+###
+DELETE  http://localhost:3000/books/60 HTTP/1.1
+Content-Type: application/json

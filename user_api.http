@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/users/1 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+"userid": 3,
+"firstname":"John",
+"lastname":"Smith"
+}
+
+
+###
+PUT http://localhost:3000/users/3 HTTP/1.1
+Content-Type: application/json
+
+{
+"userid": 3,
+"firstname":"Johnn",
+"lastname":"Doe"
+}
+
+###
+DELETE  http://localhost:3000/users/3 HTTP/1.1
+Content-Type: application/json
